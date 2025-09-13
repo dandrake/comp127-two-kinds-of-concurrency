@@ -1,4 +1,4 @@
 # Two Kinds of Concurrency
 
-- [Part 1 instructions](https://docs.google.com/document/d/1At7nbmvANlJHo6dzu0fcSwhRb4KGRGWKhCNP-rec6Nc/edit#)
-- [Part 2 instructions](https://docs.google.com/document/d/11T12QttzSNMVwWX2wR0jZ_cwEJEQigaPCQGxwNcP0qI/edit#)
+- [Part 1 instructions](https://comp127.innig.net/activities/concurrency_1)
+- [Part 2 instructions](https://comp127.innig.net/activities/concurrency_2)
