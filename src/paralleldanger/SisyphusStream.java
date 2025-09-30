@@ -7,13 +7,26 @@ public class SisyphusStream {
 
 
         Timer.measure(20, () -> {
-        SumCalculator calc = new SumCalculator();
 
-        LongStream.range(0, 10000000000L)
-            .map(n -> 1)
-            .forEach(calc::add);});
 
-        //System.out.println(calc.getTotal());
-        
+            // totally broken, non-thread-safe
+
+            // SumCalculator calc = new SumCalculator();
+            // LongStream.range(0, 40000000000L)
+            // .parallel()
+            // .map(n -> 1)
+            // .forEach(calc::add);
+
+
+            long total = LongStream.range(0, 40000000000L)
+                .parallel()
+                .map(n -> 1)
+                .sum();
+
+            System.out.println("total: " + total);
+        });
+
+        // System.out.println(calc.getTotal());
+
     }
 }
